@@ -1,6 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-import App from "./App";
+const container = document.getElementById('root');
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// Create a root.
+const root = ReactDOM.createRoot(container);
+
+// Initial render
+root.render(<App name="Composition - Cards" />);
+
+// During an update, there is no need to pass the container again
+root.render(<App name="Composition - Cards" />);
