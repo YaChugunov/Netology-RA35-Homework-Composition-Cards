@@ -1,13 +1,12 @@
 import React from 'react';
 import './style.css';
 
-import Card from './Card';
+import Main from './Main';
 
 export default function App() {
   return (
     <div>
-      <Card title={}/>
-      <Card />
+      <Main />
     </div>
   );
 }
