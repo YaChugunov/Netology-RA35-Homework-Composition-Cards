@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Card(props) {
-  console.dir(props.children);
   return (
     <>
       <div className="card">
@@ -15,6 +14,7 @@ function Card(props) {
           </a>
         </div>
       </div>
+      <div>Hello {props.children}</div>
     </>
   );
 }
@@ -30,18 +30,11 @@ export default function Main() {
   const cardButton = 'Go somewhere';
 
   return (
-    <>
-      <Card
-        image={cardImage}
-        title={cardTitles[0]}
-        content={cardContents[0]}
-        button={cardButton}
-      />
-      <Card
-        title={cardTitles[1]}
-        content={cardContents[1]}
-        button={cardButton}
-      />
-    </>
+    <Card
+      image={cardImage}
+      title={cardTitles[0]}
+      content={cardContents[0]}
+      button={cardButton}
+    ></Card>
   );
 }
