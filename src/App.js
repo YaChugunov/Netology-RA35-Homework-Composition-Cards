@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-import Main from './Main';
+import Card from './Main';
 
 export default function App() {
   const titles = ['Card title', 'Special title treatment'];
