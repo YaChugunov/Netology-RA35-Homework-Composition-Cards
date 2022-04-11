@@ -2,15 +2,15 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Card(props) {
-  console.log(props.children);
+  console.dir(props.children);
   return (
     <>
-      <div class="card">
+      <div className="card">
         <img src={props.image} className="card-img-top" alt="" />
-        <div class="card-body">
-          <h5 class="card-title">{props.title}</h5>
-          <p class="card-text">{props.content}</p>
-          <a href="#" class="btn btn-primary">
+        <div className="card-body">
+          <h5 className="card-title">{props.title}</h5>
+          <p className="card-text">{props.content}</p>
+          <a href="#" className="btn btn-primary">
             {props.button}
           </a>
         </div>

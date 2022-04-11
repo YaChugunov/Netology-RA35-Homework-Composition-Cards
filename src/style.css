@@ -4,5 +4,10 @@ p {
 }
 
 img {
-  width: 400px;
+  width: 100%;
+}
+
+.card {
+  width: 18rem;
+  margin-bottom: 1rem;
 }
