@@ -37,6 +37,11 @@ export default function Main() {
         content={cardContents[0]}
         button={cardButton}
       />
+      <Card
+        title={cardTitles[1]}
+        content={cardContents[1]}
+        button={cardButton}
+      />
     </>
   );
 }
