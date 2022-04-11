@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Card(props) {
+function Main(props) {
   return (
     <>
       <div className="card">{props.children}</div>
@@ -9,21 +9,21 @@ function Card(props) {
   );
 }
 
-export default function Main(props) {
+export default function Card(props) {
   return (
-    <Card>
+    <Main>
       <img
         src="https://mebel-go.ru/mebelgoer/9663brush-colorful-graphic-bright-3840x2400.jpg"
-        className="card-img-top"
+        className={`card-img-top ${props.hideimage}`}
         alt=""
       />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.message}</p>
         <a href="#" className="btn btn-primary">
-          Go somewhere
+          {props.button}
         </a>
       </div>
-    </Card>
+    </Main>
   );
 }

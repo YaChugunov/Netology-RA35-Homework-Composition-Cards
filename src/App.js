@@ -4,17 +4,22 @@ import './style.css';
 import Main from './Main';
 
 export default function App() {
-  const cardImage =
-    'https://mebel-go.ru/mebelgoer/9663brush-colorful-graphic-bright-3840x2400.jpg';
   const titles = ['Card title', 'Special title treatment'];
-  const cardContents = [
+  const messages = [
     "Some quick example text to build on the card title and make up the bulk of the card's content.",
     'With supporting text below as a natural lead-in to additional content.',
   ];
-  const cardButton = 'Go somewhere';
+  const button = 'Go somewhere';
+
   return (
     <div>
-      <Main title={titles[0]} />
+      <Card title={titles[0]} message={messages[0]} button={button} />
+      <Card
+        hideimage={'hideimage'}
+        title={titles[1]}
+        message={messages[1]}
+        button={button}
+      />
     </div>
   );
 }
